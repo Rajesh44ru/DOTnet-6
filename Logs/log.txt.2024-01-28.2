@@ -1,0 +1,16 @@
+2024-01-28 22:26:53,248  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: https://localhost:7284
+ 2024-01-28 22:26:53,334  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5163
+ 2024-01-28 22:26:53,340  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2024-01-28 22:26:53,344  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2024-01-28 22:26:53,347  INFO Microsoft.Hosting.Lifetime.Invoke [0] - MESSAGE: Content root path: E:\TESTC#\WEBAPI\TestWEBAPI\TestWEBAPI
+ 2024-01-28 22:28:14,114  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (75ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__Id_0
+ 2024-01-28 22:28:29,590  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 250)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [Email] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+ 

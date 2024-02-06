@@ -1,0 +1,16 @@
+2024-02-04 11:55:35,221  INFO Microsoft.Hosting.Lifetime.Invoke [0] - MESSAGE: Content root path: E:\TESTC#\WEBAPI\TestWEBAPI\TestWEBAPI
+ 2024-02-04 11:58:27,996  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (53ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[DepartmentId], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__Id_0
+ 2024-02-04 11:58:28,175  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (11ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 250), @p4='?' (Size = 250)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [Address] = @p0, [DOB] = @p1, [DepartmentId] = @p2, [Email] = @p3, [StudentName] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+ 2024-02-04 11:59:56,560  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[DepartmentId], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__Id_0
+ 

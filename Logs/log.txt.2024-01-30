@@ -1,0 +1,4 @@
+2024-01-30 21:23:23,242  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+ 

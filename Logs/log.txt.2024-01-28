@@ -1,0 +1,11 @@
+2024-01-28 22:30:45,437  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Students]
+OUTPUT 1
+WHERE [Id] = @p0;
+ 2024-01-28 22:31:01,028  INFO TestWEBAPI.Controllers.StudentController.GetStudents [24] - MESSAGE: GetStudents method started
+ 2024-01-28 22:31:01,038  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+ 

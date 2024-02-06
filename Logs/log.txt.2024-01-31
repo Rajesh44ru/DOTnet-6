@@ -1,0 +1,10 @@
+2024-01-31 21:37:51,493  INFO TestWEBAPI.Controllers.StudentController.MoveNext [28] - MESSAGE: GetStudents method started
+ 2024-01-31 21:37:51,537  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+ 2024-01-31 22:13:19,856  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: https://localhost:7284
+ 2024-01-31 22:13:19,904  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5163
+ 2024-01-31 22:13:19,908  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2024-01-31 22:13:19,912  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2024-01-31 22:13:19,915  INFO Microsoft.Hosting.Lifetime.Invoke [0] - MESSAGE: Content root path: E:\TESTC#\WEBAPI\TestWEBAPI\TestWEBAPI
+ 

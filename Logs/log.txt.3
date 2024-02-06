@@ -1,0 +1,11 @@
+2024-02-04 12:01:34,702 ERROR Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Failed executing DbCommand (361ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Int32), @p3='?' (Size = 250), @p4='?' (Size = 250)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Students] SET [Address] = @p0, [DOB] = @p1, [DepartmentId] = @p2, [Email] = @p3, [StudentName] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+ 2024-02-04 12:02:58,338  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: https://localhost:7284
+ 2024-02-04 12:02:58,383  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5163
+ 2024-02-04 12:02:58,387  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2024-02-04 12:02:58,390  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 

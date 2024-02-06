@@ -1,0 +1,11 @@
+2024-01-31 21:20:48,158 ERROR Microsoft.EntityFrameworkCore.Database.Connection.? [?] - MESSAGE: An error occurred using the connection to database 'DemoDB' on server 'localhost\SQLEXPRESS01'.
+ 2024-01-31 21:32:32,791  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: https://localhost:7284
+ 2024-01-31 21:32:32,872  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Now listening on: http://localhost:5163
+ 2024-01-31 21:32:32,877  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2024-01-31 21:32:32,882  INFO Microsoft.Hosting.Lifetime.OnApplicationStarted [0] - MESSAGE: Hosting environment: Development
+ 2024-01-31 21:32:32,885  INFO Microsoft.Hosting.Lifetime.Invoke [0] - MESSAGE: Content root path: E:\TESTC#\WEBAPI\TestWEBAPI\TestWEBAPI
+ 2024-01-31 21:37:20,258  INFO Microsoft.EntityFrameworkCore.Database.Command.? [?] - MESSAGE: Executed DbCommand (43ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[StudentName]
+FROM [Students] AS [s]
+WHERE [s].[Id] = @__Id_0
+ 
